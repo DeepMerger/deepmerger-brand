@@ -33,11 +33,20 @@ assets/
 │   ├── mark-128.svg              Scaled mark (128×128)
 │   ├── mark-64.svg               Scaled mark (64×64)
 │   ├── mark-32.svg               Scaled mark (32×32)
-│   ├── mark-16.svg               Scaled mark (16×16)
-│   └── favicon.ico               Browser favicon (SVG-based)
+│   └── mark-16.svg               Scaled mark (16×16)
 └── wordmark/
     ├── wordmark-dark.svg         Text-only wordmark (dark)
     └── wordmark-light.svg        Text-only wordmark (light)
+
+public/
+├── site.webmanifest             PWA manifest (DeepMerger app config)
+├── android-chrome-192x192.png   Android Chrome icon (192×192)
+├── android-chrome-512x512.png   Android Chrome icon (512×512)
+├── apple-touch-icon.png         iOS home screen icon (180×180)
+├── favicon-16x16.png            Browser favicon (16×16)
+├── favicon-32x32.png            Browser favicon (32×32)
+├── favicon.ico                  Browser favicon (ICO format)
+└── favicon.svg                  Browser favicon (SVG format)
 ```
 
 ---
@@ -67,16 +76,8 @@ assets/
 - **Clear Space:** Maintain a minimum clear space of 0.5 × mark height on all sides.
 - **Scalability:** The mark is designed to scale infinitely without loss of quality.
 - **Color Variations:** Use appropriate variants for different backgrounds to ensure readability.
-- **Do Not:** Alter the mark's proportions, add effects, or use unauthorized colors.
-
----
-
-## License
-
-All assets are proprietary to DeepMerger. Usage permitted for official DeepMerger communications and products.
-- Minimum size: 16px (mark only) / 80px (with wordmark)
-- Never stretch, rotate, recolour, or add effects to the mark
-- Never use on backgrounds that reduce contrast below 4.5:1
+- **Minimum Size:** 16px (mark only) / 80px (with wordmark)
+- **Do Not:** Alter the mark's proportions, add effects, or use unauthorized colors. Never stretch, rotate, recolour, or add effects to the mark. Never use on backgrounds that reduce contrast below 4.5:1.
 
 ---
 

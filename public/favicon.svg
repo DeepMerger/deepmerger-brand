@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+
+  <!-- background for contrast -->
+  <rect width="64" height="64" rx="10" fill="#0D1B2A"/>
+
+  <!-- scaled + thickened version of your mark -->
+  <g transform="translate(6,6) scale(0.85)">
+    
+    <!-- primary stroke -->
+    <path d="M18 8 L32 56"
+          stroke="#E8EDF2"
+          stroke-width="10"
+          stroke-linecap="square"/>
+
+    <!-- secondary -->
+    <path d="M8 8 L32 56"
+          stroke="#E8EDF2"
+          stroke-width="6"
+          stroke-linecap="square"
+          opacity="0.7"/>
+
+    <!-- tertiary -->
+    <path d="M28 8 L32 56"
+          stroke="#E8EDF2"
+          stroke-width="4"
+          stroke-linecap="square"
+          opacity="0.5"/>
+
+    <!-- anchor -->
+    <rect x="27" y="50" width="10" height="10" fill="#00C9A7"/>
+
+  </g>
+</svg>
