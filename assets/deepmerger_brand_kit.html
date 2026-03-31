@@ -1,0 +1,257 @@
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  .kit { font-family: 'Space Grotesk', sans-serif; padding: 32px 0; }
+
+  .section-label {
+    font-size: 9px;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-text-tertiary);
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    border-bottom: 0.5px solid var(--color-border-tertiary);
+  }
+
+  .row { display: flex; gap: 16px; margin-bottom: 24px; flex-wrap: wrap; }
+
+  .card {
+    border: 0.5px solid var(--color-border-tertiary);
+    border-radius: 12px;
+    padding: 28px;
+    flex: 1;
+    min-width: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .card.dark { background: #080E14; border-color: rgba(255,255,255,0.08); }
+  .card.mid  { background: #F4F6F8; border-color: rgba(0,0,0,0.08); }
+  .card.navy { background: #0D1B2A; border-color: rgba(255,255,255,0.06); }
+
+  .wordmark {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+  }
+
+  .wordmark .deep { color: #00C9A7; }
+  .wordmark .merger { color: #0D1B2A; }
+  .wordmark.on-dark .merger { color: #E8EDF2; }
+  .wordmark.on-dark .deep { color: #00C9A7; }
+
+  .tagline {
+    font-size: 9px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--color-text-tertiary);
+    font-weight: 400;
+  }
+
+  .swatch-row { display: flex; gap: 8px; margin-bottom: 24px; }
+
+  .swatch {
+    flex: 1;
+    height: 56px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 6px 8px;
+  }
+
+  .swatch-name { font-size: 8px; font-weight: 500; letter-spacing: 0.1em; }
+  .swatch-hex  { font-size: 8px; font-family: 'DM Mono', monospace; opacity: 0.7; }
+
+  .size-row { display: flex; align-items: center; gap: 24px; padding: 16px 0; }
+  .size-label { font-size: 9px; color: var(--color-text-tertiary); font-family: 'DM Mono', monospace; width: 36px; text-align: right; flex-shrink: 0; }
+
+  .usage-note {
+    font-size: 11px;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    padding: 12px 16px;
+    border-left: 2px solid #00C9A7;
+    background: var(--color-background-secondary);
+    border-radius: 0 6px 6px 0;
+    margin-bottom: 16px;
+  }
+
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 24px; }
+
+  .mono { font-family: 'DM Mono', monospace; }
+</style>
+
+<div class="kit">
+
+  <div class="section-label">Primary mark — the convergence</div>
+
+  <div class="row">
+    <!-- Light bg -->
+    <div class="card mid" style="min-height:180px">
+      <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+        <path d="M18 8 L32 56" stroke="#0D1B2A" stroke-width="7" stroke-linecap="square"/>
+        <path d="M8 8 L32 56"  stroke="#0D1B2A" stroke-width="4" stroke-linecap="square" opacity="0.5"/>
+        <path d="M28 8 L32 56" stroke="#0D1B2A" stroke-width="2" stroke-linecap="square" opacity="0.25"/>
+        <rect x="27" y="50" width="10" height="10" fill="#00C9A7"/>
+      </svg>
+      <div class="wordmark"><span class="deep">DEEP</span><span class="merger">MERGER</span></div>
+    </div>
+
+    <!-- Dark bg -->
+    <div class="card dark" style="min-height:180px">
+      <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+        <path d="M18 8 L32 56" stroke="#E8EDF2" stroke-width="7" stroke-linecap="square"/>
+        <path d="M8 8 L32 56"  stroke="#E8EDF2" stroke-width="4" stroke-linecap="square" opacity="0.5"/>
+        <path d="M28 8 L32 56" stroke="#E8EDF2" stroke-width="2" stroke-linecap="square" opacity="0.25"/>
+        <rect x="27" y="50" width="10" height="10" fill="#00C9A7"/>
+      </svg>
+      <div class="wordmark on-dark"><span class="deep">DEEP</span><span class="merger">MERGER</span></div>
+    </div>
+
+    <!-- Navy bg -->
+    <div class="card navy" style="min-height:180px">
+      <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+        <path d="M18 8 L32 56" stroke="#00C9A7" stroke-width="7" stroke-linecap="square"/>
+        <path d="M8 8 L32 56"  stroke="#00C9A7" stroke-width="4" stroke-linecap="square" opacity="0.6"/>
+        <path d="M28 8 L32 56" stroke="#00C9A7" stroke-width="2" stroke-linecap="square" opacity="0.35"/>
+        <rect x="27" y="50" width="10" height="10" fill="#ffffff"/>
+      </svg>
+      <div class="wordmark on-dark"><span class="deep">DEEP</span><span class="merger">MERGER</span></div>
+    </div>
+  </div>
+
+  <div class="section-label">Isolated mark — scales infinitely</div>
+
+  <div class="card mid" style="align-items:flex-start; flex-direction:row; gap:48px; padding:32px 40px; margin-bottom:24px; justify-content:flex-start;">
+    <div class="size-row" style="flex-direction:column; gap:20px; align-items:flex-start;">
+
+      <div style="display:flex;align-items:center;gap:20px;">
+        <span class="size-label">128px</span>
+        <svg width="128" height="128" viewBox="0 0 64 64" fill="none">
+          <path d="M18 8 L32 56" stroke="#0D1B2A" stroke-width="7" stroke-linecap="square"/>
+          <path d="M8 8 L32 56"  stroke="#0D1B2A" stroke-width="4" stroke-linecap="square" opacity="0.5"/>
+          <path d="M28 8 L32 56" stroke="#0D1B2A" stroke-width="2" stroke-linecap="square" opacity="0.25"/>
+          <rect x="27" y="50" width="10" height="10" fill="#00C9A7"/>
+        </svg>
+      </div>
+
+      <div style="display:flex;align-items:center;gap:20px;">
+        <span class="size-label">64px</span>
+        <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+          <path d="M18 8 L32 56" stroke="#0D1B2A" stroke-width="7" stroke-linecap="square"/>
+          <path d="M8 8 L32 56"  stroke="#0D1B2A" stroke-width="4" stroke-linecap="square" opacity="0.5"/>
+          <path d="M28 8 L32 56" stroke="#0D1B2A" stroke-width="2" stroke-linecap="square" opacity="0.25"/>
+          <rect x="27" y="50" width="10" height="10" fill="#00C9A7"/>
+        </svg>
+      </div>
+
+      <div style="display:flex;align-items:center;gap:20px;">
+        <span class="size-label">32px</span>
+        <svg width="32" height="32" viewBox="0 0 64 64" fill="none">
+          <path d="M18 8 L32 56" stroke="#0D1B2A" stroke-width="7" stroke-linecap="square"/>
+          <path d="M8 8 L32 56"  stroke="#0D1B2A" stroke-width="4" stroke-linecap="square" opacity="0.5"/>
+          <path d="M28 8 L32 56" stroke="#0D1B2A" stroke-width="2" stroke-linecap="square" opacity="0.25"/>
+          <rect x="27" y="50" width="10" height="10" fill="#00C9A7"/>
+        </svg>
+      </div>
+
+      <div style="display:flex;align-items:center;gap:20px;">
+        <span class="size-label">16px</span>
+        <svg width="16" height="16" viewBox="0 0 64 64" fill="none">
+          <path d="M18 8 L32 56" stroke="#0D1B2A" stroke-width="7" stroke-linecap="square"/>
+          <path d="M8 8 L32 56"  stroke="#0D1B2A" stroke-width="4" stroke-linecap="square" opacity="0.5"/>
+          <path d="M28 8 L32 56" stroke="#0D1B2A" stroke-width="2" stroke-linecap="square" opacity="0.25"/>
+          <rect x="27" y="50" width="10" height="10" fill="#00C9A7"/>
+        </svg>
+      </div>
+    </div>
+
+    <div style="max-width:280px;padding-top:8px;">
+      <div style="font-size:13px;font-weight:500;color:var(--color-text-primary);margin-bottom:10px;line-height:1.5;">The mark reads at 16px.</div>
+      <div style="font-size:12px;color:var(--color-text-secondary);line-height:1.7;">Three strokes converging to a single teal anchor point. Heavy → medium → light weight encodes hierarchy: primary data, secondary signal, tertiary context — all merging into one intelligence point.</div>
+      <div style="margin-top:14px;font-size:11px;font-family:'DM Mono',monospace;color:var(--color-text-tertiary);">No circles. No gradients. No rounded corners. Pure geometry.</div>
+    </div>
+  </div>
+
+  <div class="section-label">Colour system</div>
+
+  <div class="swatch-row">
+    <div class="swatch" style="background:#0D1B2A;">
+      <span class="swatch-name" style="color:#fff;">Deep Navy</span>
+      <span class="swatch-hex" style="color:#fff;">#0D1B2A</span>
+    </div>
+    <div class="swatch" style="background:#00C9A7;">
+      <span class="swatch-name" style="color:#04342C;">Convergence</span>
+      <span class="swatch-hex" style="color:#04342C;">#00C9A7</span>
+    </div>
+    <div class="swatch" style="background:#1A3A4A;">
+      <span class="swatch-name" style="color:#9FE1CB;">Command</span>
+      <span class="swatch-hex" style="color:#9FE1CB;">#1A3A4A</span>
+    </div>
+    <div class="swatch" style="background:#E8EDF2; border: 0.5px solid rgba(0,0,0,0.08);">
+      <span class="swatch-name" style="color:#1A3A4A;">Signal</span>
+      <span class="swatch-hex" style="color:#1A3A4A;">#E8EDF2</span>
+    </div>
+    <div class="swatch" style="background:#FF4545;">
+      <span class="swatch-name" style="color:#fff;">Alert</span>
+      <span class="swatch-hex" style="color:#fff;">#FF4545</span>
+    </div>
+  </div>
+
+  <div class="section-label">The concept — what the mark means</div>
+
+  <div class="card mid" style="flex-direction:row; align-items:center; gap:40px; padding:28px 36px; margin-bottom:24px; justify-content:flex-start;">
+    <svg width="100" height="120" viewBox="0 0 100 120" fill="none">
+      <text x="2"  y="18" font-size="8" fill="#888" font-family="DM Mono, monospace">weather</text>
+      <text x="36" y="18" font-size="8" fill="#888" font-family="DM Mono, monospace">OSINT</text>
+      <text x="72" y="18" font-size="8" fill="#888" font-family="DM Mono, monospace">SAT</text>
+      <path d="M10 22 L50 90"  stroke="#0D1B2A" stroke-width="5" stroke-linecap="square"/>
+      <path d="M50 22 L50 90"  stroke="#0D1B2A" stroke-width="3" stroke-linecap="square" opacity="0.5"/>
+      <path d="M85 22 L50 90"  stroke="#0D1B2A" stroke-width="1.5" stroke-linecap="square" opacity="0.3"/>
+      <rect x="43" y="86" width="14" height="14" fill="#00C9A7"/>
+      <text x="50" y="114" font-size="7" fill="#00C9A7" text-anchor="middle" font-family="DM Mono, monospace">ONE PICTURE</text>
+    </svg>
+    <div style="flex:1">
+      <div style="font-size:14px;font-weight:500;color:var(--color-text-primary);margin-bottom:8px;">Three streams. One truth.</div>
+      <div style="font-size:12px;color:var(--color-text-secondary);line-height:1.8;">The three strokes are every data source — weather, satellite, OSINT, terrain, units. The weight difference encodes priority. The teal anchor at the bottom is the moment of fusion: the Common Operating Picture. One point. No noise. Total clarity.</div>
+      <div style="margin-top:12px;font-size:11px;font-family:'DM Mono',monospace;color:var(--color-text-tertiary);">The mark works without explanation. That's the test.</div>
+    </div>
+  </div>
+
+  <div class="section-label">Typography</div>
+  <div class="row" style="margin-bottom:8px;">
+    <div class="card" style="align-items:flex-start; gap:10px; padding:24px 28px;">
+      <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:var(--color-text-tertiary);margin-bottom:4px;">Display — Space Grotesk 600</div>
+      <div style="font-size:28px;font-weight:600;letter-spacing:0.18em;color:var(--color-text-primary);">DEEPMERGER</div>
+      <div style="font-size:13px;font-weight:400;letter-spacing:0.12em;color:var(--color-text-secondary);text-transform:uppercase;">BATTLEFIELD INTELLIGENCE PLATFORM</div>
+    </div>
+    <div class="card" style="align-items:flex-start; gap:10px; padding:24px 28px;">
+      <div style="font-size:9px;letter-spacing:0.15em;text-transform:uppercase;color:var(--color-text-tertiary);margin-bottom:4px;">Data / Mono — DM Mono 400</div>
+      <div style="font-family:'DM Mono',monospace;font-size:14px;color:var(--color-text-primary);line-height:2;">GRID 4478-N<br/>34.2°N 77.6°E<br/>THREAT: ELEVATED<br/>CONF: 78%</div>
+    </div>
+  </div>
+
+  <div class="section-label">Clear space rule</div>
+  <div class="card mid" style="padding:40px; margin-bottom:0;">
+    <svg width="200" height="120" viewBox="0 0 200 120" fill="none">
+      <rect x="30" y="10" width="140" height="100" rx="2" stroke="#00C9A7" stroke-width="0.5" stroke-dasharray="3 3"/>
+      <rect x="55" y="25" width="90" height="70" rx="2" stroke="#CCC" stroke-width="0.5" stroke-dasharray="2 2"/>
+      <path d="M82 30 L100 85" stroke="#0D1B2A" stroke-width="8" stroke-linecap="square"/>
+      <path d="M65 30 L100 85" stroke="#0D1B2A" stroke-width="5" stroke-linecap="square" opacity="0.5"/>
+      <path d="M96 30 L100 85" stroke="#0D1B2A" stroke-width="2.5" stroke-linecap="square" opacity="0.25"/>
+      <rect x="94" y="80" width="12" height="12" fill="#00C9A7"/>
+      <text x="100" y="108" text-anchor="middle" font-size="7" fill="#888" font-family="DM Mono, monospace">min clear space = mark height × 0.5</text>
+    </svg>
+  </div>
+
+</div>
